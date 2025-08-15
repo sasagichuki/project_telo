@@ -396,13 +396,13 @@ def main():
     print("🚀 Generating Static HTML Dashboard...")
     
     # File paths - try combined results first, then fallback to single dataset
-    csv_path = "combined_analysis_results/coded_messages_detailed.csv"
-    json_path = "combined_analysis_results/analysis_summary.json"
+    csv_path = "../combined_analysis_results/coded_messages_detailed.csv"
+    json_path = "../combined_analysis_results/analysis_summary.json"
     
     # Fallback to single dataset if combined doesn't exist
     if not os.path.exists(csv_path) or not os.path.exists(json_path):
-        csv_path = "telegram_analysis_results/coded_messages_detailed.csv"
-        json_path = "telegram_analysis_results/analysis_summary.json"
+        csv_path = "../telegram_analysis_results/coded_messages_detailed.csv"
+        json_path = "../telegram_analysis_results/analysis_summary.json"
     
     if not os.path.exists(csv_path) or not os.path.exists(json_path):
         print("❌ Error: Analysis results not found!")

@@ -16,10 +16,10 @@ def main():
     print("📊 Loading your analysis results...")
     
     # Check if analysis results exist - try combined results first
-    combined_csv = "combined_analysis_results/coded_messages_detailed.csv"
-    combined_json = "combined_analysis_results/analysis_summary.json"
-    single_csv = "telegram_analysis_results/coded_messages_detailed.csv"
-    single_json = "telegram_analysis_results/analysis_summary.json"
+    combined_csv = "../combined_analysis_results/coded_messages_detailed.csv"
+    combined_json = "../combined_analysis_results/analysis_summary.json"
+    single_csv = "../telegram_analysis_results/coded_messages_detailed.csv"
+    single_json = "../telegram_analysis_results/analysis_summary.json"
     
     if os.path.exists(combined_csv) and os.path.exists(combined_json):
         print("✅ Combined analysis results found (12,000 messages)!")

@@ -520,13 +520,13 @@ class TelegramAnalysisDashboard:
         json_file = st.sidebar.file_uploader("Upload JSON Summary", type=['json'])
         
         # Default file paths - try combined results first
-        default_csv = "combined_analysis_results/coded_messages_detailed.csv"
-        default_json = "combined_analysis_results/analysis_summary.json"
+        default_csv = "../combined_analysis_results/coded_messages_detailed.csv"
+        default_json = "../combined_analysis_results/analysis_summary.json"
         
         # Fallback to single dataset if combined doesn't exist
         if not os.path.exists(default_csv) or not os.path.exists(default_json):
-            default_csv = "telegram_analysis_results/coded_messages_detailed.csv"
-            default_json = "telegram_analysis_results/analysis_summary.json"
+            default_csv = "../telegram_analysis_results/coded_messages_detailed.csv"
+            default_json = "../telegram_analysis_results/analysis_summary.json"
         
         # Load data
         data_loaded = False
